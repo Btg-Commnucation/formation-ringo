@@ -1,0 +1,103 @@
+:root {
+  --color-pink: #d099b2;
+  --color-purple: #341432;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-pink);
+  background-color: var(--color-purple);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  color: var(--color-purple);
+  background: var(--color-pink);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-purple);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-pink);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-block: 0 1em !important;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-pink);
+  border: 1px solid var(--color-pink);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: var(--color-purple);
+}
+button:hover {
+  background: transparent;
+  color: var(--color-pink);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--color-purple);
+    background-color: var(--color-pink);
+  }
+}
+
+#root {
+  margin-inline: auto;
+  width: 100%;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.step-input {
+  background: transparent;
+  border: 1px solid var(--color-pink);
+  margin-bottom: 1em;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 18px;
+}

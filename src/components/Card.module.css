@@ -1,0 +1,69 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 100%;
+  border: 1px solid var(--color-pink);
+}
+
+.svg {
+  width: 45px;
+  height: 45px;
+}
+
+.cardHeader {
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  min-height: 300px;
+}
+
+.titleElement {
+  position: absolute;
+  bottom: -2.3em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  left: 1em;
+}
+
+.coverImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.cardBody {
+  margin-left: 1em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.cardBody span {
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.cardBody span::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: var(--color-pink);
+  opacity: 0.2;
+  border-radius: 20px;
+}
